@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block Tetris</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center min-h-screen p-4">
+  <h1 class="text-3xl font-bold mb-4">Block Tetris</h1>
+  <canvas id="board" width="240" height="480" class="border border-gray-600"></canvas>
+
+  <div id="info" class="mt-4 text-center">
+    <p>Score: <span id="score">0</span></p>
+    <p>Level: <span id="level">1</span></p>
+    <p>Lines: <span id="lines">0</span></p>
+  </div>
+
+  <div id="controls" class="mt-4 flex space-x-2 md:hidden">
+    <button id="left" class="bg-blue-500 px-4 py-2 rounded">Left</button>
+    <button id="rotate" class="bg-green-500 px-4 py-2 rounded">Rotate</button>
+    <button id="right" class="bg-blue-500 px-4 py-2 rounded">Right</button>
+    <button id="down" class="bg-red-500 px-4 py-2 rounded">Down</button>
+  </div>
+
+  <div id="game-over" class="hidden absolute inset-0 bg-gray-900 bg-opacity-90 flex flex-col items-center justify-center">
+    <h2 class="text-2xl mb-4">Game Over</h2>
+    <button id="restart" class="bg-yellow-500 px-4 py-2 rounded">Restart</button>
+  </div>
+
+  <audio id="rotate-sound" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg"></audio>
+  <audio id="clear-sound" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle_to_drum_hit.ogg"></audio>
+  <audio id="bg-music" src="https://actions.google.com/sounds/v1/ambiences/busy_beach.ogg" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
