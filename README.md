@@ -1,5 +1,5 @@
 # Block Tetris
 
-Simple Tetris-like game built with HTML5 canvas, Tailwind CSS and vanilla JavaScript. Supports keyboard and touch controls.
+A simple Tetris clone using HTML5 canvas and Tailwind CSS. The game works on both desktop and mobile with keyboard and touch controls.
 
-Open `index.html` in a browser to play.
+Open `index.html` in your browser to play.
